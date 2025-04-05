@@ -1,0 +1,21 @@
+.slider_section {
+  padding: 100px 0; 
+  background-color: rgb(236, 219, 199); 
+}
+
+.detail-box h1 {
+  color: #3e502c;
+}
+
+.button1 {
+  background-color:rgb(245, 164, 71);
+  border: none;
+}
+.button1:hover {
+  background-color:rgb(246, 133, 3)!important;
+  border: none;
+}
+.img-box img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,16 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.navbar{
+  background-color: rgb(232, 171, 97)!important;
+}
+.navbar .navbar-brand,
+.navbar .nav-link{
+  background-color: rgb(232, 171, 97)!important;
+  color: white!important;
+}
+.navbar .nav-link:hover {
+  color: rgb(107, 7, 7) !important; 
+}
+
