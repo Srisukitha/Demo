@@ -15,6 +15,7 @@ function About() {
                 Maintenance <br />
                 Services
               </h1>
+              <h2>Hi</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
                 harum voluptatem adipisci. Quos molestiae saepe dicta nobis
