@@ -1,30 +1,25 @@
-import React from "react";
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import './App.css'
-import About from "./About";
+import React, { useState } from 'react';
+import StyleContext from './StyleContext';
 
+import Todo from './Todo'; 
 
 function App() {
-  return(
-    <React.Fragment>
-    <Navbar className='navbar' expand="lg" fixed="top">
-    <Container>
-      <Navbar.Brand href="#">Brand</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ms-auto">
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">About</Nav.Link>
-          <Nav.Link href="#">Service</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>
-  <About />
-  </React.Fragment>
+  const [styles, setStyles] = useState({
+    box1: {},
+    box2: {},
+    box3: {},
+    page: {}
+  });
+
+  return (
+    <StyleContext.Provider value={{ styles, setStyles }}>
+      <div style={{ ...styles.page, height: '100vh', display: 'flex', gap: '20px', justifyContent: 'center', alignItems: 'center' }}>
+       
+        <Todo />
+      </div>
+    </StyleContext.Provider>
   );
 }
 
-<About />
+export default App;
 
-export default App
