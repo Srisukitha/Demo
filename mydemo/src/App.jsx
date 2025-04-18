@@ -17,7 +17,7 @@ function App() {
     <StyleContext.Provider value={{ styles, setStyles }}>
       <div style={{ ...styles.page, height: '100vh', display: 'flex', gap: '20px', justifyContent: 'center', alignItems: 'center' }}>
         <Box1 />
-        <Box2 />
+        <Box2 />  
         <Box3 />
         <Todo />
       </div>
